@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Consolas';
+            src: url('./font/Consolas.woff2') format('woff2'),
+                url('./font/Consolas.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        *{
+            margin:0 ;            
+            padding:0 ;
+
+        }
+        .green{
+            color: #0fbf6a;
+        }
+        .mustard{
+            color: #f5d97d;
+        }
+        .orange{
+            color: #F49320;
+        }
+        .orang{
+            color: #E85A3B;
+        }
+        .purple{
+            color: #9E69C7;
+        }
+        .light-green{
+            color: #7DFE9A;
+        }
+        .turqoise{
+            color: #13F4F4;
+        }
+        .third{
+            position: relative;
+        }
+        .third::after{
+            content: ".";
+            overflow: hidden;
+            margin-left: 4px;
+            background-color: #FFEDAD;
+            width: 6px;
+            position: absolute;
+            animation: 0.3s blink infinite alternate;
+        }
+        .container{
+            height: max-content;
+            margin:0 auto;
+            padding: 10vh 0;
+            background-color: #272727;
+            width: max-content;
+            color :white;
+        }
+        .con{
+            background-color: #272727;
+        }
+        .first, .second, .third{
+            width: max-content;
+            margin: 0 auto;
+        }
+        .container{
+            font-size: 24px;
+        }
+        .first{
+            border-top: 3px solid #585757;
+            padding: 3px 10px 5px 10px;
+            border-right: 3px solid #585757;
+            border-bottom: 3px solid #585757;
+        }
+        .github{
+            width: 347px;
+            height: auto;
+            background: #FFFFFF;
+            box-shadow: 0px 1px 25px 3px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            justify-content: space-between;
+            margin: 0px auto; 
+        }
+        .circle{
+            background-image: url(https://media.discordapp.net/attachments/741465545345597469/752848734043504730/pfp_zoom.png);
+            background-size: cover;
+            height: 65px;
+            width: 65px;
+            border-radius: 50%;
+        }
+        .github2{
+            display: flex;
+            padding: 14px 20px ;
+            justify-content: none;
+        }
+        .logo{
+            margin-left:20px;
+            padding-top: 5px;
+        }
+        .logo span{
+            transform: translateY(6px);
+            margin-left: 10px;
+            font-family: 'Roboto', sans-serif; font-weight: 700;
+            font-size: 20px;
+
+        }  
+        .container *{
+            font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+        }
+        .about{
+            width: 100%;
+            border-radius: 10px;
+            max-width: 668px;
+            padding: 34px 60px;
+            margin: 40px auto;
+            font-family: 'Roboto', sans-serif; 
+            box-shadow: 0px 1px 25px 3px rgba(0, 0, 0, 0.25);
+        }
+        .title{
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif; 
+            font-size: 22px; 
+        }
+        .about p{
+            margin-bottom: 20px;
+        }
+        .oof{
+            padding: 4vh 0;
+        }
+        .pg-title{
+            width: max-content;
+            margin: 0 auto;
+            font-family: 'Roboto', sans-serif; 
+            font-size: 28px;
+            margin-bottom: 40px;
+            position: relative;
+            font-weight: 500;
+        }
+        .pg-title::after{
+            position: absolute;
+            content: ".";
+            bottom: -10px;
+            color: white;
+            width: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 6px;
+            background-color: #3B7DFF;
+        }
+        .languages .img{
+            width: max-content;
+            margin: 0 auto;
+        }
+        .footer{
+            width: 100%;
+            padding: 20px 0;
+            background-color: #F0F0F0;
+        }
+        .details{
+            color: rgb(43, 43, 43) !important;
+            font-family: 'Roboto', sans-serif;
+        }
+        .details *{
+            font-size: 18px;
+            display: inline-block;
+        }
+        .details img{
+            transform: translateY(10px);
+            margin-right: 10px;
+        }
+
+        @media screen and (max-width: 780px){
+            .about{
+                max-width: 78vw;
+                padding: 34px;
+            }
+            .container {
+                font-size: 16px;
+            }
+            .first{
+                border-top: 2px solid #585757;
+                padding: 1px 10px 3px 5px;
+                border-right: 2px solid #585757;
+                border-bottom: 2px solid #585757;
+            }
+            .sm img{
+                height: 105px !important;
+            }
+            .img img{
+                height: 150px;
+            }
+        }
+
+        @keyframes blink{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            90%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="con">
+        <div class="container">
+            <div class="first"><span class="green">Console</span>.<span class="mustard">WriteLine</span>(<span class="orange">'Hey There!'</span>);</div>
+            <div class="second"></div>
+            <div class="third">console.<span class="purple">log</span>(<span class="turqoise">"</span>I love coding<span class="turqoise">"</span>);</div>
+        </div>
+    </div>
+    <div class="oof">
+        <div class="github">
+            <div class="github2">
+                <div class="circle"></div>
+                <div class="logo">
+                    <div  class="co" style="display: flex;">
+                        <img src="https://cdn.discordapp.com/attachments/741465545345597469/752832430259306546/25231.png" height="35px">
+                        <span>itzplayz0001</span>
+                    </div>
+                    <span style="font-weight:400;font-size: 20px;margin-left: -0px;">Check me out on github</span>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div class="title">About Me</div>
+            <p>
+                I am a .NET Developer, and I make desktop applications. I am also a front-end developer. I am soon going to start with backend development. I have spent a long time coding bots based on <a style="color: rgb(100, 84, 245);" href="https://discord.js.org/#/">discord.js</a>
+            </p>
+            <div class="title">Hobbies</div>
+            <p>
+                Reverse engineering, Cracking, Hacking and Social Engineering
+            </p>
+        </div>
+    </div>
+    <div class="oof">
+        <div class="pg-title">Some of my favourite languages</div>
+        <div class="languages" style="margin-bottom: 30px;">
+            <div class="img">
+                <img src="https://cdn.discordapp.com/attachments/741465545345597469/752848375040311328/cs.png" height="150px" alt="">
+            </div>
+            <div class="img">
+                <img src="https://cdn.discordapp.com/attachments/741465545345597469/752848327137034280/html_css.png" height="180px" alt="">
+            </div>
+            <div class="img sm" style="display: flex;">
+                <img src="https://cdn.discordapp.com/attachments/741465545345597469/752848388852023418/py.png" style="padding: 15px;" height="120px" alt="">
+                <img src="https://cdn.discordapp.com/attachments/741465545345597469/752848408175443977/js.png" style="padding: 15px;" height="120px" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="text-align: center;">
+        <div class="title" style="width: max-content;margin: 0 auto;font-size: 26px;">Contact Details</div>
+        <div class="details">
+            <img src="https://cdn.discordapp.com/attachments/741465545345597469/752848232177991680/mail3.png" height="30px" alt=""> 
+            <a href="mailto:ptoolsofficial@gmail.com" style="color: black;"> ptoolsofficial@gmail.com</a> <br>
+            <img src="https://cdn.discordapp.com/attachments/741465545345597469/752848261672337408/discord.png" height="30px" alt=""> 
+            <span>Supreme Gang Certified Member#0986</span>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.second').innerHTML = `<span class="turqoise"><</span><span class="orang">h1</span> <span class="purple">class</span><span class="turqoise">="<span class="light-green">text</span><span class="turqoise">"></span></span>I'm ItzPLAYZ<span class="turqoise"><<span class="turqoise">/</span></span><span class="orang">h1<span class="turqoise">></span></span>`
+    </script>
+    <script>
+        class TypeWriter {
+            constructor(txtElement, words, wait = 3000) {
+            this.txtElement = txtElement;
+            this.words = words;
+            this.txt = '';
+            this.wordIndex = 0;
+            this.wait = parseInt(wait, 10);
+            this.type();
+            this.isDeleting = false;
+            }
+        
+            type() {
+            const current = this.wordIndex % this.words.length;
+            const fullTxt = this.words[current];
+        
+            if(this.isDeleting) {
+
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+        
+            this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+        
+            let typeSpeed = 200;
+        
+            if(this.isDeleting) {
+                typeSpeed /= 2;
+            }
+        
+
+            if(!this.isDeleting && this.txt === fullTxt) {
+                typeSpeed = this.wait;
+                this.isDeleting = true;
+            } else if(this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.wordIndex++;
+                typeSpeed = 500;
+            }
+            setTimeout(() => this.type(), typeSpeed);
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', init);
+        
+        function init() {
+            const txtElement = document.querySelector('.txt-type');
+
+            new TypeWriter(txtElement, ["simple", "smart", "paperless"], 600);
+        }
+    </script>
+</body>
+</html> 
