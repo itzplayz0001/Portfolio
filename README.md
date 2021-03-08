@@ -2,19 +2,20 @@
 
 <h4 align="center">I am a 15-year-old self-taught developer, I love coding and playing video games! :cookie:</h4>
 <br>
-
+```javascript
+let games = { "CS:GO", "Minecraft", "Fortnite", "GTA V", "Among Us", "FarCry", "Watch dogs", "other games from xbox gamepass..." }
+```
 <h4>:cyclone: Some more things about me...</h4>
 
 ```csharp
 Dictionary<string, string> About = new Dictionary<string, string>()
 {
-  { "Knowledge", "C#, Node.js (express, discord.js, fs and more), Java (Mobile Development), HTML, CSS" },
+  { "Knowledge", "C#, Node.js (express, discord.js, fs and more), Java (Mobile Development), HTML, CSS, Server-Side, Nginx" },
   { "Projects", "Dentsmart, SECRET-PROJECTS" },
   { "Tools", "Visual Studio, Figma, VSC, IntelliJ IDEA, Sublime Text, GitHub" }, // also... STACKOVERFLOW!
   { "OS", "Windows 10", "Ubuntu" }
 };
 ```
-
 
 <h2 align="center">Statistics</h2>
 
