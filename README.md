@@ -3,7 +3,7 @@
 <h4 align="center">I am a 15-year-old self-taught developer, I love coding and playing video games! :cookie:</h4>
 <br>
 ```js
-let games = { "CS:GO", "Minecraft", "Fortnite", "GTA V", "Among Us", "FarCry", "Watch dogs", "other games from xbox gamepass..." }
+let games = { "CS:GO", "Minecraft", "Fortnite", "GTA V", "Among Us", "FarCry", "Watch dogs", "other games from xbox gamepass..." };
 ```
 <h4>:cyclone: Some more things about me...</h4>
 
