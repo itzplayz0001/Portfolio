@@ -6,16 +6,6 @@
 <h4>:cyclone: Some more things about me...</h4>
 
 ```csharp
-Dictionary<string, string> Biitez = new Dictionary<string, string>()
-{
-  { "Knowledge", "C#, VB.NET, Web Developer (PHP)" },
-  { "Projects", "ByteChecker, Authenty.ME, Akiza.IO" },
-  { "Tools", "Visual Studio, JetBrains Rider, GitHub" },
-  { "OS", "Windows 10" }
-};
-```
-
-```csharp
 Dictionary<string, string> About = new Dictionary<string, string>()
 {
   { "Knowledge", "C#, Node.js (express, discord.js, fs and more), Java (Mobile Development), HTML, CSS" },
